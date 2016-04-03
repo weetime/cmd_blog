@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>{{config.title|escape}}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/compoments/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/assets/compoments/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/compoments/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>{{post.title|escape}}</h1>
+        <p>{{post.date|escape}}</p>
+        <hr/>
+        <div>{{post.content}}</div>
+    </div>
+</body>
+</html>

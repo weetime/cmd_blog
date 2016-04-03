@@ -1,0 +1,38 @@
+var express = require('express');
+var fs = require('fs');
+var path = require('path');
+var markdown = require('markdown-it');
+var md = new markdown({
+    html:true,
+    langPrefix:'code-'
+});
+console.log(dir);
+var router = express.Router();
+  // 渲染文章
+  router.get('/posts/*',function(req,res,next){
+      var name = stripExtname(req.params[0]);
+      var file = path.resolve(dir,'_posts',name+'.md');
+      fs.readFile(file,function(err,content){
+        if(err) return next(err);
+        var html = markdownToHTML(content.toString());
+        res.end(html);
+      })
+  });
+  // 列表页
+  router.get('/',function(req,res,next){
+      res.end('list');
+  });
+
+// 去掉文件名中的扩展名
+function stripExtname(name){
+    var i = 0 - path.extname(name).length;
+    if(i === 0) i = name.length;
+    return name.slice(0,i);
+}
+
+// 将markdown 转换为html
+function markdownToHTML(content){
+    return md.render(content || '');
+}
+
+module.exports = router;
