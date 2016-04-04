@@ -1,0 +1,1082 @@
+
+blog=/home/xiaoma/cmd_blog CD=. {
+ bin=bin {
+  myblog
+ }
+ example=example {
+  _layout=_layout {
+   index.html
+   post.html
+  }
+  _posts=_posts {
+   2016-04=2016-04 {
+    hello-world.md
+    node.md
+   }
+  }
+  assets=assets {
+   icon.png
+   compoments=compoments {
+    bootstrap=bootstrap {
+     CHANGELOG.md
+     Gruntfile.js
+     LICENSE
+     README.md
+     bower.json
+     package.js
+     package.json
+     dist=dist {
+      css=css {
+       bootstrap-theme.css
+       bootstrap-theme.css.map
+       bootstrap-theme.min.css
+       bootstrap-theme.min.css.map
+       bootstrap.css
+       bootstrap.css.map
+       bootstrap.min.css
+       bootstrap.min.css.map
+      }
+      fonts=fonts {
+       glyphicons-halflings-regular.eot
+       glyphicons-halflings-regular.svg
+       glyphicons-halflings-regular.ttf
+       glyphicons-halflings-regular.woff
+       glyphicons-halflings-regular.woff2
+      }
+      js=js {
+       bootstrap.js
+       bootstrap.min.js
+       npm.js
+      }
+     }
+     fonts=fonts {
+      glyphicons-halflings-regular.eot
+      glyphicons-halflings-regular.svg
+      glyphicons-halflings-regular.ttf
+      glyphicons-halflings-regular.woff
+      glyphicons-halflings-regular.woff2
+     }
+     grunt=grunt {
+      bs-commonjs-generator.js
+      bs-glyphicons-data-generator.js
+      bs-lessdoc-parser.js
+      bs-raw-files-generator.js
+      configBridge.json
+      sauce_browsers.yml
+     }
+     js=js {
+      affix.js
+      alert.js
+      button.js
+      carousel.js
+      collapse.js
+      dropdown.js
+      modal.js
+      popover.js
+      scrollspy.js
+      tab.js
+      tooltip.js
+      transition.js
+     }
+     less=less {
+      alerts.less
+      badges.less
+      bootstrap.less
+      breadcrumbs.less
+      button-groups.less
+      buttons.less
+      carousel.less
+      close.less
+      code.less
+      component-animations.less
+      dropdowns.less
+      forms.less
+      glyphicons.less
+      grid.less
+      input-groups.less
+      jumbotron.less
+      labels.less
+      list-group.less
+      media.less
+      mixins.less
+      modals.less
+      navbar.less
+      navs.less
+      normalize.less
+      pager.less
+      pagination.less
+      panels.less
+      popovers.less
+      print.less
+      progress-bars.less
+      responsive-embed.less
+      responsive-utilities.less
+      scaffolding.less
+      tables.less
+      theme.less
+      thumbnails.less
+      tooltip.less
+      type.less
+      utilities.less
+      variables.less
+      wells.less
+      mixins=mixins {
+       alerts.less
+       background-variant.less
+       border-radius.less
+       buttons.less
+       center-block.less
+       clearfix.less
+       forms.less
+       gradients.less
+       grid-framework.less
+       grid.less
+       hide-text.less
+       image.less
+       labels.less
+       list-group.less
+       nav-divider.less
+       nav-vertical-align.less
+       opacity.less
+       pagination.less
+       panels.less
+       progress-bar.less
+       reset-filter.less
+       reset-text.less
+       resize.less
+       responsive-visibility.less
+       size.less
+       tab-focus.less
+       table-row.less
+       text-emphasis.less
+       text-overflow.less
+       vendor-prefixes.less
+      }
+     }
+     nuget=nuget {
+      MyGet.ps1
+      bootstrap.less.nuspec
+      bootstrap.nuspec
+     }
+    }
+    jquery=jquery {
+     AUTHORS.txt
+     LICENSE.txt
+     README.md
+     bower.json
+     dist=dist {
+      jquery.js
+      jquery.min.js
+      jquery.min.map
+      jquery.slim.js
+      jquery.slim.min.js
+      jquery.slim.min.map
+     }
+     sizzle=sizzle {
+      LICENSE.txt
+      dist=dist {
+       sizzle.js
+       sizzle.min.js
+       sizzle.min.map
+      }
+     }
+     src=src {
+      ajax.js
+      attributes.js
+      callbacks.js
+      core.js
+      css.js
+      data.js
+      deferred.js
+      deprecated.js
+      dimensions.js
+      effects.js
+      event.js
+      intro.js
+      jquery.js
+      manipulation.js
+      offset.js
+      outro.js
+      queue.js
+      selector-native.js
+      selector-sizzle.js
+      selector.js
+      serialize.js
+      support.js
+      traversing.js
+      wrap.js
+      ajax=ajax {
+       jsonp.js
+       load.js
+       parseJSON.js
+       parseXML.js
+       script.js
+       xhr.js
+       var=var {
+        location.js
+        nonce.js
+        rquery.js
+       }
+      }
+      attributes=attributes {
+       attr.js
+       classes.js
+       prop.js
+       support.js
+       val.js
+      }
+      core=core {
+       DOMEval.js
+       access.js
+       init.js
+       parseHTML.js
+       ready.js
+       support.js
+       var=var {
+        rsingleTag.js
+       }
+      }
+      css=css {
+       addGetHookIf.js
+       adjustCSS.js
+       curCSS.js
+       defaultDisplay.js
+       hiddenVisibleSelectors.js
+       showHide.js
+       support.js
+       var=var {
+        cssExpand.js
+        getStyles.js
+        isHidden.js
+        rmargin.js
+        rnumnonpx.js
+        swap.js
+       }
+      }
+      data=data {
+       Data.js
+       accepts.js
+       support.js
+       var=var {
+        acceptData.js
+        dataPriv.js
+        dataUser.js
+       }
+      }
+      deferred=deferred {
+       exceptionHook.js
+      }
+      effects=effects {
+       Tween.js
+       animatedSelector.js
+       support.js
+      }
+      event=event {
+       ajax.js
+       alias.js
+       focusin.js
+       support.js
+       trigger.js
+      }
+      exports=exports {
+       amd.js
+       global.js
+      }
+      manipulation=manipulation {
+       _evalUrl.js
+       buildFragment.js
+       createSafeFragment.js
+       getAll.js
+       setGlobalEval.js
+       support.js
+       wrapMap.js
+       var=var {
+        nodeNames.js
+        rcheckableType.js
+        rleadingWhitespace.js
+        rscriptType.js
+        rtagName.js
+       }
+      }
+      queue=queue {
+       delay.js
+      }
+      traversing=traversing {
+       findFilter.js
+       var=var {
+        dir.js
+        rneedsContext.js
+        siblings.js
+       }
+      }
+      var=var {
+       arr.js
+       class2type.js
+       concat.js
+       deletedIds.js
+       document.js
+       documentElement.js
+       hasOwn.js
+       indexOf.js
+       pnum.js
+       push.js
+       rcssNum.js
+       rnotwhite.js
+       slice.js
+       support.js
+       toString.js
+      }
+     }
+    }
+   }
+  }
+ }
+ lib=lib {
+  cmd_preview
+  utils.js
+ }
+ node_modules=node_modules {
+  commander=commander {
+   History.md
+   LICENSE
+   Readme.md
+   index.js
+   package.json
+   node_modules=node_modules {
+    graceful-readlink=graceful-readlink {
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+   }
+  }
+  express=express {
+   lib=lib {
+    application.js
+    express.js
+    request.js
+    response.js
+    utils.js
+    view.js
+    middleware=middleware {
+     init.js
+     query.js
+    }
+    router=router {
+     index.js
+     layer.js
+     route.js
+    }
+   }
+   node_modules=node_modules {
+    accepts=accepts {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+     node_modules=node_modules {
+      mime-types=mime-types {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+       node_modules=node_modules {
+        mime-db=mime-db {
+         HISTORY.md
+         LICENSE
+         README.md
+         db.json
+         index.js
+         package.json
+        }
+       }
+      }
+      negotiator=negotiator {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+       lib=lib {
+        charset.js
+        encoding.js
+        language.js
+        mediaType.js
+       }
+      }
+     }
+    }
+    array-flatten=array-flatten {
+     LICENSE
+     README.md
+     array-flatten.js
+     package.json
+    }
+    content-disposition=content-disposition {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    content-type=content-type {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    cookie=cookie {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    cookie-signature=cookie-signature {
+     History.md
+     Readme.md
+     index.js
+     package.json
+    }
+    debug=debug {
+     History.md
+     Makefile
+     Readme.md
+     bower.json
+     browser.js
+     component.json
+     debug.js
+     node.js
+     package.json
+     node_modules=node_modules {
+      ms=ms {
+       History.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+     }
+    }
+    depd=depd {
+     History.md
+     LICENSE
+     Readme.md
+     index.js
+     package.json
+     lib=lib {
+      browser=browser {
+       index.js
+      }
+      compat=compat {
+       buffer-concat.js
+       callsite-tostring.js
+       event-listener-count.js
+       index.js
+      }
+     }
+    }
+    escape-html=escape-html {
+     LICENSE
+     Readme.md
+     index.js
+     package.json
+    }
+    etag=etag {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    finalhandler=finalhandler {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+     node_modules=node_modules {
+      unpipe=unpipe {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+     }
+    }
+    fresh=fresh {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    merge-descriptors=merge-descriptors {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    methods=methods {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    on-finished=on-finished {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+     node_modules=node_modules {
+      ee-first=ee-first {
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+     }
+    }
+    parseurl=parseurl {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    path-to-regexp=path-to-regexp {
+     History.md
+     LICENSE
+     Readme.md
+     index.js
+     package.json
+    }
+    proxy-addr=proxy-addr {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+     node_modules=node_modules {
+      forwarded=forwarded {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+      ipaddr.js=ipaddr.js {
+       Cakefile
+       LICENSE
+       README.md
+       bower.json
+       ipaddr.min.js
+       package.json
+       lib=lib {
+        ipaddr.js
+       }
+       src=src {
+        ipaddr.coffee
+       }
+       test=test {
+        ipaddr.test.coffee
+       }
+      }
+     }
+    }
+    qs=qs {
+     CHANGELOG.md
+     CONTRIBUTING.md
+     LICENSE
+     README.md
+     bower.json
+     package.json
+     lib=lib {
+      index.js
+      parse.js
+      stringify.js
+      utils.js
+     }
+     test=test {
+      parse.js
+      stringify.js
+      utils.js
+     }
+    }
+    range-parser=range-parser {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    send=send {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+     node_modules=node_modules {
+      destroy=destroy {
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+      http-errors=http-errors {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+       node_modules=node_modules {
+        inherits=inherits {
+         LICENSE
+         README.md
+         inherits.js
+         inherits_browser.js
+         package.json
+         test.js
+        }
+       }
+      }
+      mime=mime {
+       LICENSE
+       README.md
+       cli.js
+       mime.js
+       package.json
+       types.json
+       build=build {
+        build.js
+        test.js
+       }
+      }
+      ms=ms {
+       History.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+      statuses=statuses {
+       LICENSE
+       README.md
+       codes.json
+       index.js
+       package.json
+      }
+     }
+    }
+    serve-static=serve-static {
+     HISTORY.md
+     LICENSE
+     README.md
+     index.js
+     package.json
+    }
+    type-is=type-is {
+     node_modules=node_modules {
+      media-typer=media-typer {
+       HISTORY.md
+       LICENSE
+       README.md
+       index.js
+       package.json
+      }
+      mime-types=mime-types {
+       node_modules=node_modules {
+        mime-db=mime-db {
+         HISTORY.md
+         LICENSE
+         README.md
+         db.json
+         index.js
+         package.json
+        }
+       }
+      }
+     }
+    }
+    utils-merge=utils-merge {
+    }
+    vary=vary {
+    }
+   }
+  }
+  fs-extra=fs-extra {
+   lib=lib {
+    copy=copy {
+    }
+    copy-sync=copy-sync {
+    }
+    empty=empty {
+    }
+    ensure=ensure {
+    }
+    json=json {
+    }
+    mkdirs=mkdirs {
+    }
+    move=move {
+    }
+    output=output {
+    }
+    remove=remove {
+    }
+    streams=streams {
+    }
+    util=util {
+    }
+    walk=walk {
+    }
+   }
+   node_modules=node_modules {
+    graceful-fs=graceful-fs {
+    }
+    jsonfile=jsonfile {
+    }
+    klaw=klaw {
+    }
+    path-is-absolute=path-is-absolute {
+    }
+    rimraf=rimraf {
+     node_modules=node_modules {
+      glob=glob {
+       node_modules=node_modules {
+        inflight=inflight {
+         node_modules=node_modules {
+          wrappy=wrappy {
+           test=test {
+           }
+          }
+         }
+        }
+        inherits=inherits {
+        }
+        minimatch=minimatch {
+         node_modules=node_modules {
+          brace-expansion=brace-expansion {
+           node_modules=node_modules {
+            balanced-match=balanced-match {
+             test=test {
+             }
+            }
+            concat-map=concat-map {
+             example=example {
+             }
+             test=test {
+             }
+            }
+           }
+          }
+         }
+        }
+        once=once {
+         node_modules=node_modules {
+          wrappy=wrappy {
+           test=test {
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  markdown-it=markdown-it {
+   bin=bin {
+   }
+   dist=dist {
+   }
+   lib=lib {
+    common=common {
+    }
+    helpers=helpers {
+    }
+    presets=presets {
+    }
+    rules_block=rules_block {
+    }
+    rules_core=rules_core {
+    }
+    rules_inline=rules_inline {
+    }
+   }
+   node_modules=node_modules {
+    argparse=argparse {
+     lib=lib {
+      action=action {
+       append=append {
+       }
+       store=store {
+       }
+      }
+      argument=argument {
+      }
+      help=help {
+      }
+     }
+     node_modules=node_modules {
+      sprintf-js=sprintf-js {
+       demo=demo {
+       }
+       dist=dist {
+       }
+       src=src {
+       }
+       test=test {
+       }
+      }
+     }
+    }
+    entities=entities {
+     lib=lib {
+     }
+     maps=maps {
+     }
+     test=test {
+     }
+    }
+    linkify-it=linkify-it {
+     lib=lib {
+     }
+    }
+    mdurl=mdurl {
+    }
+    uc.micro=uc.micro {
+     categories=categories {
+      Cc=Cc {
+      }
+      Cf=Cf {
+      }
+      P=P {
+      }
+      Z=Z {
+      }
+     }
+     properties=properties {
+      Any=Any {
+      }
+     }
+    }
+   }
+  }
+  moment=moment {
+   locale=locale {
+   }
+   min=min {
+   }
+   src=src {
+    lib=lib {
+     create=create {
+     }
+     duration=duration {
+     }
+     format=format {
+     }
+     locale=locale {
+     }
+     moment=moment {
+     }
+     parse=parse {
+     }
+     units=units {
+     }
+     utils=utils {
+     }
+    }
+    locale=locale {
+    }
+   }
+  }
+  open=open {
+   lib=lib {
+   }
+   vendor=vendor {
+   }
+  }
+  rd=rd {
+   benchmark=benchmark {
+   }
+   lib=lib {
+   }
+   test=test {
+    files=files {
+     a=a {
+      ab=ab {
+       aba=aba {
+       }
+      }
+     }
+     b=b {
+     }
+     e=e {
+      ea=ea {
+       eaa=eaa {
+        eaaa=eaaa {
+         eaaaa=eaaaa {
+         }
+        }
+       }
+      }
+     }
+     f=f {
+     }
+    }
+   }
+  }
+  serve-static=serve-static {
+   node_modules=node_modules {
+    escape-html=escape-html {
+    }
+    parseurl=parseurl {
+    }
+    send=send {
+     node_modules=node_modules {
+      debug=debug {
+      }
+      depd=depd {
+       lib=lib {
+        browser=browser {
+        }
+        compat=compat {
+        }
+       }
+      }
+      destroy=destroy {
+      }
+      etag=etag {
+      }
+      fresh=fresh {
+      }
+      http-errors=http-errors {
+       node_modules=node_modules {
+        inherits=inherits {
+        }
+       }
+      }
+      mime=mime {
+       build=build {
+       }
+      }
+      ms=ms {
+      }
+      on-finished=on-finished {
+       node_modules=node_modules {
+        ee-first=ee-first {
+        }
+       }
+      }
+      range-parser=range-parser {
+      }
+      statuses=statuses {
+      }
+     }
+    }
+   }
+  }
+  swig=swig {
+   bin=bin {
+   }
+   dist=dist {
+   }
+   lib=lib {
+    loaders=loaders {
+    }
+    tags=tags {
+    }
+   }
+   node_modules=node_modules {
+    optimist=optimist {
+     example=example {
+     }
+     node_modules=node_modules {
+      minimist=minimist {
+       example=example {
+       }
+       test=test {
+       }
+      }
+      wordwrap=wordwrap {
+       example=example {
+       }
+       test=test {
+       }
+      }
+     }
+     test=test {
+      _=_ {
+      }
+     }
+    }
+    uglify-js=uglify-js {
+     bin=bin {
+     }
+     lib=lib {
+     }
+     node_modules=node_modules {
+      async=async {
+       lib=lib {
+       }
+      }
+      source-map=source-map {
+       build=build {
+       }
+       lib=lib {
+        source-map=source-map {
+        }
+       }
+       node_modules=node_modules {
+        amdefine=amdefine {
+        }
+       }
+       test=test {
+        source-map=source-map {
+        }
+       }
+      }
+      uglify-to-browserify=uglify-to-browserify {
+       test=test {
+       }
+      }
+      yargs=yargs {
+       lib=lib {
+       }
+       node_modules=node_modules {
+        camelcase=camelcase {
+        }
+        decamelize=decamelize {
+        }
+        window-size=window-size {
+        }
+        wordwrap=wordwrap {
+         example=example {
+         }
+         test=test {
+         }
+        }
+       }
+      }
+     }
+     tools=tools {
+     }
+    }
+   }
+  }
+ }
+ project=project {
+ }
+ routes=routes {
+ }
+}

@@ -1,106 +1,32 @@
 var express = require('express');
 var serveStatic = require('serve-static');
 var path = require('path');
-// var routes = require('../routes/index');
 var fs = require('fs');
-var path = require('path');
-var markdown = require('markdown-it');
-var md = new markdown({
-    html:true,
-    langPrefix:'code-'
-});
-// 引入swig 模板引擎
-var swig = require('swig');
-swig.setDefaults({cache:false});
-// 引入文件夹遍历
-var rd = require('rd');
+var utils = require('./utils');
+var open = require('open');
 
 module.exports = function(dir){
     dir = dir || '.';
-    // 初始化express
     var app = express();
-    // app.use(express.static(path.join(dir, 'assets'))); // 有问题
+    // 加载配置项
+    var config = utils.loadConfig(dir);
     // 静态资源
     app.use('/assets',serveStatic(path.resolve(dir,'assets')));
-    // 路由
-    // app.use('/', routes);
     // 渲染文章
     app.get('/posts/*',function(req,res,next){
-      var name = stripExtname(req.params[0]);
+      var name = utils.stripExtname(req.params[0]);
       var file = path.resolve(dir,'_posts',name+'.md');
-      // console.log(file);
-      fs.readFile(file,function(err,content){
-        if(err) return next(err);
-        var post = parseSourceContent(content.toString());
-        post.content = markdownToHTML(post.source);
-        post.layout = post.layout || 'post';
-        var html = renderFile(path.resolve(dir,'_layout',post.layout+'.html'),{post:post});
-        res.end(html);
-      });
+      var html = utils.renderPost(dir,file);
+      res.end(html);
     });
   // 列表页
   app.get('/',function(req,res,next){
-      var list = [];
-      var sourceDir = path.resolve(dir,'_posts');
-      rd.eachFileFilterSync(sourceDir,/\.md$/,function(f,s){
-        console.log(f);
-        var source = fs.readFileSync(f).toString();
-        var post = parseSourceContent(source);
-        post.timestamp = new Date(post.date);
-        post.url = '/posts/'+stripExtname(f.slice(sourceDir.length+1))+'.html';
-        list.push(post);
-      });
-      // 排序
-      list.sort(function(a,b){
-        return b.timestamp - a.timestamp;
-      });
-      var html = renderFile(path.resolve(dir,'_layout','index.html'),{posts:list});
-      res.end(html);
+    var html = utils.renderIndex(dir);
+    res.end(html);
   });
-    app.listen(3005);
+
+  var port = config.port || '3005';
+  var url = 'http://127.0.0.1:'+port;
+  app.listen(port);
+  // open(url);
 }
-
-// 去掉文件名中的扩展名
-function stripExtname(name){
-    var i = 0 - path.extname(name).length;
-    if(i === 0) i = name.length;
-    return name.slice(0,i);
-}
-
-// 将markdown 转换为html
-function markdownToHTML(content){
-    return md.render(content || '');
-}
-
-// 解析文章元数据
-function parseSourceContent(data){
-    var split = '---\n';
-    var info = {};
-    var i = data.indexOf(split);
-    if(i!=-1){
-        var j = data.indexOf(split,i+split.length);
-        if(j!=-1){
-            var str = data.slice(i+split.length,j).trim();
-            data = data.slice(j+split.length);
-            str.split('\n').forEach(function(line){
-                var k = line.indexOf(':');
-                var name = line.slice(0,k).trim();
-                var value = line.slice(k+1).trim();
-                info[name] = value;
-            })
-        }
-    }
-    info.source = data;
-    return info;
-}
-
-// 渲染模板
-function renderFile(file,data){
-    return swig.render(fs.readFileSync(file).toString(),{
-        filename:file,
-        autoescape:false,
-        locals:data
-    });
-}
-
-
